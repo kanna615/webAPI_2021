@@ -267,18 +267,28 @@ def Sum(cardid, bx , aaa):
             connection.close()  # connectionを閉じる
 
 
-    if __name__ == '__main__':
-        cr = MyCardReader()
-        while True:
-            print(cardid)
-            cr.bx = bx
-            if (aaa == "1"):
-                cr.card_search()
-            else:
-                cr.card_4()
-
-            return str(cr.modoriti)
+    # if __name__ == '__main__':
+    #     cr = MyCardReader()
+    #     while True:
+    #         print(cardid)
+    #         cr.bx = bx
+    #         if (aaa == "1"):
+    #             cr.card_search()
+    #         else:
+    #             cr.card_4()
+    #
+    #         return str(cr.modoriti)
     #return str(int(x) + int(y))
+
+    cr = MyCardReader()
+    print(cardid)
+    cr.bx = bx
+    if (aaa == "1"):
+        cr.card_search()
+    else:
+        cr.card_4()
+
+    return str(cr.modoriti)
 
 
 
