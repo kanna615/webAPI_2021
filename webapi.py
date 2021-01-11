@@ -206,6 +206,8 @@ def Sum(cardid, bx , aaa):
                     if (results[a][1] == "収穫"):  # 収穫の時ケースの数と効率を出すプログラム付き
                         # 開始時刻                                                    stateに開始時刻がある状態で、レーン番号が一致しない場合は他のレーンでの2回目のタッチを忘れている。
 
+                        cr.modoriti = 5
+
                         print('finish2')
                         start = results[a][4]
                         finish = datetime.now()
