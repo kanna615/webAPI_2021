@@ -9,14 +9,15 @@ import time
 app = Flask(__name__)
 
 
-@app.route("/a=<cardid>,b=<bx>,c=<aaa>")
-def Sum(cardid, bx , aaa):
+@app.route("/a=<cardid>,b=<bx>,c=<aaa>,d=<rane>")
+def Sum(cardid, bx , aaa, rane):
 
     time.sleep(0.1)
 
     class MyCardReader(object):
 
-        RANE = '1'
+        # RANE = '1'
+        RANE = rane
         modoriti = '0'
         bx = '0'
 
