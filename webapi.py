@@ -18,8 +18,8 @@ def Sum(cardid, bx , aaa, rane):
 
         # RANE = '1'
         RANE = rane
-        modoriti = '0'
-        bx = '0'
+        modoriti = 0
+        bx = 0
 
 
         def _notice1(self):  # 登録済みカードの1回目のタッチ
